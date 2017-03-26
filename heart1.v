@@ -3,7 +3,7 @@ module Heart(
 	output reg[5:0] data
 	);
 	
-	reg[3:0] rom_content[0:1024];
+	reg[5:0] rom_content[0:1024];
 	
 	always@(address or rom_content)
 	begin

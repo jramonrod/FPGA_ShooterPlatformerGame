@@ -17,6 +17,7 @@ NET "left[0]" LOC =P80;
 NET "right[0]" LOC =P81;
 NET "shot[0]" LOC = P83;
 NET "up[0]" LOC = P82;
+NET "select[0]" LOC = P66;
 
 NET "left[1]" LOC =P6;
 NET "right[1]" LOC =P2;

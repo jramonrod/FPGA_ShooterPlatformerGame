@@ -1,4 +1,4 @@
-module LFDWW(
+module creed(
 	input[11:0] address,
 	output reg[5:0] data
 	);
@@ -8,9 +8,8 @@ module LFDWW(
 	always@(address or rom_content)
 	begin
 		data=rom_content[address];
-		data={data[2],data[2],data[1],data[1],data[0],data[0]};
-	end			
+	end
 	initial begin
-		$readmemh("LWins.txt",rom_content,0,4096);
+		$readmemh("creed.mif",rom_content,0,4096);
 	end
 endmodule

@@ -3,7 +3,7 @@ module GunW(
 	output reg[5:0] data
 	);
 	
-	reg[3:0] rom_content[0:4096];
+	reg[5:0] rom_content[0:4096];
 	
 	always@(address or rom_content)
 	begin
